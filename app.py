@@ -50,7 +50,7 @@ if api_key:
         # Split and index
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=5000, chunk_overlap=500)
         splits = text_splitter.split_documents(documents)
-        vectorstore = Chroma.from_documents(splits, embedding=embeddings)
+        vectorstore = Chroma.from_documents(splits, embedding=embeddings,persist_directory="/tmp/chroma")
         retriever = vectorstore.as_retriever()
 
         # Prompt to make follow-up questions standalone
