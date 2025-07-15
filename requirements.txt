@@ -1,0 +1,16 @@
+langchain==0.3.23
+langchain-chroma==0.2.4
+langchain-community==0.3.21
+langchain-core==0.3.68
+langchain-groq==0.3.2
+langchain-text-splitters==0.3.8
+langsmith==0.3.45
+chromadb==1.0.15                #
+groq==0.22.0                  
+huggingface-hub==0.33.4         
+sentence-transformers==5.0.0        
+transformers==4.53.2           
+python-dotenv==1.1.0            
+langchain-huggingface==0.3.0
+streamlit==1.46.1
+pypdf==3.17.4
